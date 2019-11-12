@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  
+  /* HTML5 display-role reset for older browsers */
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  
+  body {
+    line-height: 1; }
+  
+  ol, ul {
+    list-style: none; }
+  
+  blockquote, q {
+    quotes: none; }
+  
+  blockquote {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  q {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+    a {
+    text-decoration: none;   
+    }
+
+
+    // fonts
+    $font-family1:'Inconsolata', monospace;
+    $font-family2:'Playfair Display', serif;
+
+    // colors
+    $color1:#000;
+
+    // fontsize
+    $font-size1:20px;
+    $font-size2:30px;
+    $font-size3:15px;
+
+    // private class
+    %section{ 
+    max-width: 1170px;
+    width: auto; 
+    margin: 0 auto;
+    }
+    %flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    }
+    %text{
+        margin-top: 25px;
+        font-size:$font-size3 ;
+        font-family:$font-family2 ;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+}
+    %text1{
+        font-size:$font-size2;
+        font-family:$font-family2;
+        margin-bottom:30px;
+    }
+    %text2{
+        font-size:$font-size1;
+        font-family:$font-family2;
+        margin-bottom: 75px;
+    }
+
+
+  section{
+    @extend %section;
+    @extend %flex;
+    
+ .logo{
+    width: 100px;
+      }
+     ul{
+    display: flex;
+      }
+      li{
+    margin: 50px;
+      }
+      a{
+    font-size: $font-size1;
+    text-transform: uppercase;
+    color: $color1;
+    font-family: $font-family1;
+      }
+    }
+    section{
+    @extend %section;
+        .photo1{
+    width: 1062px;        
+
+        }
+    }
+    section{
+     @extend %section; 
+     margin-top: 95px;
+      
+        .box-photo{
+            margin-left: 120px;
+            
+    
+       .text1{
+           @extend %text;
+        }
+                h1{@extend %text1;
+                } 
+                    .text2{
+                    @extend %text2;
+                    }
+                    h2{  @extend %text;
+                    }
+                }
+            }
+ .lifestyle-box{
+     @extend %flex;
+     flex-wrap: nowrap;
+     .box1{
+         margin-right: 20px;}
+     
+     h3{
+        @extend %text;
+     }
+     h4{
+        @extend %text1;
+    }
+    .lifeStyle{
+        @extend %text;
+        margin-right: 10px;
+
+
+    }
+    
+ }  
+  section{
+      .diary-box{
+        @extend %flex;
+        flex-wrap: nowrap;}
+          .box1{ margin-right: 20px;}
+          h3{
+            @extend %text;
+         }
+         h4{
+            @extend %text1;
+        }
+        .lifeStyle{
+            @extend %text;
+            margin-right: 10px;
+    
+    
+        }
+    
+          
+      
+  }
+    section{
+        .sign-up{
+            background: #F0F0F0;
+            width: 100%;
+            h5{
+                @extend %text1;
+                text-align: center;
+                margin-top: 50px;
+
+            }
+            .mail{
+                @extend %text;
+                text-align: center;
+                margin-top: 70px;
+                text-decoration: underline;
+
+            }
+        }
+    }
+    section{
+        .last-box{
+          @extend %flex;
+          flex-wrap: nowrap;}
+            .box1{ margin-right: 20px;}
+            h3{
+              @extend %text;
+           }
+           h4{
+              @extend %text1;
+          }
+          .lifeStyle{
+              @extend %text;
+              margin-right: 10px;
+      
+      
+          }
+      
+            
+        
+    }
+    section{
+        
+        .lead-more{
+            width: 15%;
+            border: 1px solid #000;
+            margin: 35%;
+            
+              P{
+                @extend %text1;
+                text-align: center;
+                padding: 10px;
+              }
+        }
+    }
+    footer{
+        section{
+            background: #F0F0F0;}
+            .txt{
+                @extend %flex;
+                margin-left: 50px;
+            }
+                .txt-1{
+                    @extend %text;
+                    margin-right: 10px;
+                }
+                .icn{
+                    @extend %flex;
+                    margin-right: 50px;
+                }
+                i{
+                    margin-left: 10px;
+                }
+                }
+            
+            
+
+    

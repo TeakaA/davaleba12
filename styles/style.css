@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+section {
+  max-width: 1170px;
+  width: auto;
+  margin: 0 auto; }
+
+section, .lifestyle-box, section .diary-box, section .last-box, footer .txt, footer .icn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+section .box-photo .text1, section .box-photo h2, .lifestyle-box h3, .lifestyle-box .lifeStyle, section h3, section .lifeStyle, section .sign-up .mail, footer .txt-1 {
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 25px;
+  text-transform: uppercase; }
+
+section .box-photo h1, .lifestyle-box h4, section h4, section .sign-up h5, section .lead-more P {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px; }
+
+section .box-photo .text2 {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 75px; }
+
+section .logo {
+  width: 100px; }
+
+section ul {
+  display: flex; }
+
+section li {
+  margin: 50px; }
+
+section a {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Inconsolata", monospace; }
+
+section .photo1 {
+  width: 1062px; }
+
+section {
+  margin-top: 95px; }
+  section .box-photo {
+    margin-left: 120px; }
+
+.lifestyle-box {
+  flex-wrap: nowrap; }
+  .lifestyle-box .box1 {
+    margin-right: 20px; }
+  .lifestyle-box .lifeStyle {
+    margin-right: 10px; }
+
+section .diary-box {
+  flex-wrap: nowrap; }
+
+section .box1 {
+  margin-right: 20px; }
+
+section .lifeStyle {
+  margin-right: 10px; }
+
+section .sign-up {
+  background: #F0F0F0;
+  width: 100%; }
+  section .sign-up h5 {
+    text-align: center;
+    margin-top: 50px; }
+  section .sign-up .mail {
+    text-align: center;
+    margin-top: 70px;
+    text-decoration: underline; }
+
+section .last-box {
+  flex-wrap: nowrap; }
+
+section .box1 {
+  margin-right: 20px; }
+
+section .lifeStyle {
+  margin-right: 10px; }
+
+section .lead-more {
+  width: 15%;
+  border: 1px solid #000;
+  margin: 35%; }
+  section .lead-more P {
+    text-align: center;
+    padding: 10px; }
+
+footer section {
+  background: #F0F0F0; }
+
+footer .txt {
+  margin-left: 50px; }
+
+footer .txt-1 {
+  margin-right: 10px; }
+
+footer .icn {
+  margin-right: 50px; }
+
+footer i {
+  margin-left: 10px; }
